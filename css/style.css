@@ -1,0 +1,112 @@
+:root {
+  --clr-primary-1: hsl(31, 77%, 52%); /* Sedans */
+  --clr-primary-2: hsl(184, 100%, 22%); /* SUVs */
+  --clr-primary-3: hsl(179, 100%, 13%); /* Luxury  */
+
+  --clr-neutral-1: hsla(0, 0%, 100%, 0.75); /* Pararaphs */
+  --clr-neutral-2: hsl(0, 0%, 95%); /* Background, headings and buttons */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  background-color: var(--clr-neutral-2);
+}
+
+/* Typography */
+.icon {
+  margin-bottom: 38px;
+}
+
+.title {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--clr-neutral-2);
+  margin-bottom: 24px;
+}
+
+.description {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  color: var(--clr-neutral-2);
+  margin-bottom: 84px;
+}
+
+/* buttons */
+.button {
+  font-family: "Lexend Deca", sans-serif;
+  background-color: var(--clr-neutral-2);
+  border: 3px solid var(--clr-neutral-2);
+  padding: 12px 30px 14px;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.1s;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.button:focus,
+.button:hover {
+  background-color: transparent;
+  color: var(--clr-neutral-2);
+  border: 3px solid var(--clr-neutral-2);
+  transition: 0.1s;
+  cursor: pointer;
+}
+
+.btn-sedans {
+  color: var(--clr-primary-1);
+}
+
+.btn-suv {
+  color: var(--clr-primary-2);
+}
+
+.btn-luxury {
+  color: var(--clr-primary-3);
+}
+
+/* Container / Cards */
+.container {
+  display: flex;
+  flex-direction: row;
+  max-width: 920px;
+  width: 100%;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.card {
+  padding: 48px;
+}
+
+.sedans {
+  background-color: var(--clr-primary-1);
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.suv {
+  background-color: var(--clr-primary-2);
+}
+
+.luxury {
+  background-color: var(--clr-primary-3);
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
